@@ -1,0 +1,48 @@
+:root {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+header {
+    height: 5vh;
+    background-color: #534340;
+    justify-content: space-between;
+    /* padding-right: 10px; */
+}
+
+main {
+    height: 70vh;
+    background-color: #F4FCD9;
+
+}
+
+footer {
+    height: 20vh;
+    background-color: #534340;
+
+}
+
+li {
+    display: inline-block;
+    /* width: 200px;
+    height: 75px; */
+    padding: 10px 30px;
+    /* background-color: #F4FCD9;
+
+    margin-left: 2rem;
+    margin-right: 2rem; */
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    font-family: verdana, arial, helvetica;
+}
+

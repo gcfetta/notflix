@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lollapalooza Argentina</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/support.css">
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+
+    <header>
+        <img src="../media/lollap.png" alt="lollapalooza logo"id="logo_img">
+
+        <!-- Sandwich Menú para mobile -->
+
+        <div class="sandwich" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
+        <nav id="mobile">
+            <ul>
+                <a href="../../index.html">Inicio</a>
+                <a href="http://instagram.com/lollapaloozaar" target="_blank">Instagram</a>
+                <a href="https://linktr.ee/tpogit" target="_blank">Githubs</a>
+            </ul>
+        </nav>
+    
+    
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("mobile");
+                menu.classList.toggle("active");
+            
+            var sandwich = document.querySelector(".sandwich");
+            var ul = document.querySelector("#mobile ul");
+
+            if (menu.classList.contains("active")) {
+                sandwich.style.marginLeft = "70%";
+            } else {
+                sandwich.style.marginLeft = "74%";
+        }
+    }
+            
+        </script>
+
+        <div id="header_block">
+
+            <div id="header_text">
+                <ul>
+                    <a href="artists.html">Artistas</a>
+                    <a href="../../index.html">Inicio</a>
+                    <a href="prices.html">Entradas</a></ul>
+                </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="column">
+                        <input type="text" placeholder="Nombre" name="nombre" required oninvalid="this.setCustomValidity('No puede estar vacío')">
+                    
+                        <input type="text" placeholder="Apellido" name="apellido" required oninvalid="this.setCustomValidity('No puede estar vacío')">
+                   
+                        <input type="text" placeholder="Email" name="email" required oninvalid="this.setCustomValidity('No puede estar vacío')">
+                    
+                        <textarea type="text" placeholder="Mensaje" name="mensaje" required oninvalid="this.setCustomValidity('No puede estar vacío')"></textarea>
+                    </div>
+                        <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+        
+            
+
+    </main>
+
+    <footer>
+        
+    <div class="flex-container">
+        <div>
+        <h3>Lollaworld</h3>
+    
+        <br>
+    
+        <ul class="flex-container">
+            <a href="https://global.lollapalooza.com/" target="_blank">Lollapalooza Global</a>
+            <a href="https://www.lollapaloozabr.com/" target="_blank">Lollapalooza Brasil</a>
+            <a href="https://www.lollapaloozacl.com/" target="_blank">Lollapalooza Chile</a>
+        </ul>
+        </div>
+    
+        <div>
+            <h3>Ayuda</h3>
+    
+            <br>
+    
+            <ul class="flex-container">
+                <a href="#" target="_blank">Soporte</a>
+                <a href="#" target="_blank">Información</a>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>Redes</h3>
+            
+            <br>
+    
+            <ul class="flex-container">
+                <a href="http://youtube.com/lollapaloozaar" target="_blank">Youtube</a>
+                <a href="http://www.facebook.com/lollapaloozaar" target="_blank">Facebook</a>
+                <a href="http://instagram.com/lollapaloozaar" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@lollapaloozaar?_t=8ZZYkNJrMxx&_r=1" target="_blank">TikTok</a>
+            </ul>
+        </div>
+        </div>
+    
+        <div id="underfoot">
+            <div>
+                <p>© Lollapalooza, LLC</p>
+            </div>
+            <div>
+                <a href="https://help.livenation.com/hc/en-us/articles/10468828916113-Terms-of-Use" style="color: white;" target="_blank">Terminos de uso</a>
+            </div>
+        </div>
+    
+
+    </footer>
+
+    <script>
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function handleClick(event) {
+        event.preventDefault();
+
+        const inputs = document.querySelectorAll('#first_name, #last_name');
+
+        inputs.forEach(input => {
+            input.value = '';
+        });
+        });
+
+    </script>
+    
+</body>
+</html>
